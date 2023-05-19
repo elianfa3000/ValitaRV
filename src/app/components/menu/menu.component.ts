@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router } from "@angular/router";
 
 @Component({
   selector: 'app-menu',
@@ -7,23 +8,36 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent {
 
+  private router = inject(Router)
 
-  menu() {
+  funScroll() {
+    var header = document.querySelector(".box-one");
     window.addEventListener("scroll", function () {
-      var header = document.querySelector(".box-one");
-
-      header!.classList.toggle("abajo", window.scrollY > 800);
-      header!.classList.toggle("arriba", window.scrollY < 1000);
-    })
+      header!.classList.toggle("arriba", window.scrollY < 900);
+      header!.classList.toggle("abajo", window.scrollY > 600);
+    });
   }
 
   ngOnInit() {
-    console.log("hola")
-
-    this.menu();
-
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        var header = document.querySelector(".box-one");
+        if (event.url.includes('inicio')) {
+          this.funScroll();
+          console.log("inicio")
+        } if (event.url.includes('plataforma')) {
+          header!.classList.add('abajo')
+          console.log("plataforma")
+        } if (event.url.includes('sobreNosotros')) {
+          header!.classList.add('abajo')
+          console.log("sobreNosotros")
+        } if (event.url.includes('contacto')) {
+          header!.classList.add('abajo')
+          console.log("contacto")
+        }
+      }
+    });
   }
-
 
 
 }

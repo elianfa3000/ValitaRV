@@ -1,102 +1,58 @@
+.box-one {
 
-
-*{
-  margin: 0;
-  padding:0;
-  box-sizing: border-box;
-  font-family: "Helvetica Neue",Helvetica,Arial;
-}
-.box-one{
-  background-color: rgba(0, 0, 0, 0);
   width: 100%;
-  height: 45px;
+  height: 9%;
   position: fixed;
   z-index: 9999;
+
 }
 
-nav{
+nav {
+
+  border-left: 100px;
   width: 40%;
-  height: 100%; ;
-  margin:  auto ;
-/**/
+  height: 100%;
+  margin: auto;
 
-/**/
+  /**/
+
+
+  /**/
 }
 
 
-.menu-horizontal{/*centrar li*/
+.menu-horizontal{
+  transform: translateX(2%);
   display: flex;
   justify-content: space-around;
-
-
+  align-items: center;
+  height: 100%; /* altura de contenedor */
 }
-
-
-
-.menu-horizontal li{/*centrar */
+.menu-horizontal li {
+  /*centrar */
   list-style: none;
-  margin: 14px 0px  ;
+  margin: 14px 0px;
+  text-align: center;
+
 }
 
-.menu-horizontal li a{
-  color: #fff;
+.menu-horizontal li a {
+  color: #ffffff;
   text-decoration: none;
+  font-size: 1.4em;
+
 
 }
 
-
-.contenedor {
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center; /* centra horizontalmente */
-  align-items: stretch; /* mantiene la misma distancia arriba y abajo */
-  width: 100%;
-  height: 1600px; /* ajusta la altura del contenedor como sea necesario */
-
+header.arriba {
+  transition: all 0.5s ease-out;
+  background-color: rgba(0, 0, 0, 0);
 }
-
-.elemento {
-
-  align-self: center; /* centra verticalmente el elemento dentro del contenedor */
-/**/
-}
-
 
 header.abajo {
   transition: all 0.5s ease-out;
-  background-color:rgba(0, 0, 0, 0.412)
-}
-header.arriba{
-  transition: all 0.5s ease-out;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.332);
+  backdrop-filter: blur(3px);
 }
 
-.fijo {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 80px;
-
-  z-index: 1;
-}
-
-.div1{
-  width: 100%;
-  height: 900px;
-  position: sticky;
-
-  top: 0;
-
-}
-.EJM1{
-  background-color:rgb(182, 96, 177);
-  width: 100%;
-  height: 1000px;
-  position: absolute;
-  display: block;
-
-  display: flex;/**/
-  justify-content: center;
-
-}
 

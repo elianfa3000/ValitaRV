@@ -1,0 +1,336 @@
+#nuestrosServicios {
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+}
+.div1 {
+  width: 88%;
+  background-color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+}
+.titel-red {
+  background-clip: text;
+  font-size: 2.9rem;
+  background: linear-gradient(to bottom, #d51f36, #9e0724);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.p1 {
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #878787;
+}
+.figures {
+  display: flex;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 60px;
+}
+.figures2 {
+  display: flex;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-evenly;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.figure {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  transition: transform 0.4s ease-in-out;
+}
+.figure:hover {
+  transform: scale(1.2);
+  fill: #ff0000; /*   :(  */
+  color: #c23b3b; /*   :(  */
+}
+.figure-argument {
+  width: 400px;
+}
+.figure-argument2 {
+  width: 400px;
+  text-align: center;
+}
+
+.EJM1 {
+  background-color: rgb(233, 133, 133);
+  width: 100%;
+  height: 1000px;
+
+  display: flex; /**/
+  justify-content: center;
+}
+.elemento {
+  /**/
+  align-self: center; /* centra verticalmente el elemento dentro del contenedor */
+  /**/
+  position: sticky;
+}
+.b-caption {
+  font-size: 1.8rem;
+  font-weight: bold; /*negrita*/
+  color: #878787;
+}
+.h3 {
+  font-size: 1.4rem;
+  font-weight: normal; /*normal*/
+  color: #878787;
+  padding-top: 20px;
+}
+
+/*------------------------------------*/
+
+#tecDesarrollo {
+  position: sticky;
+  height: 900px;
+  width: 100%;
+  background: linear-gradient(#000000, #f12b2b);
+}
+.imgTecDesa {
+  justify-content: space-evenly;
+}
+#div2 {
+  width: 93%;
+  padding-top: 110px;
+}
+.derecha {
+  text-align: right;
+}
+
+.figures3 {
+  display: flex;
+  width: 60%;
+  margin: 0px auto;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 80px;
+}
+.figures4 {
+  display: flex;
+  width: 60%;
+  margin: 0px auto;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 60px;
+}
+/*blender*/
+.linea1 {
+  position: absolute;
+  border-bottom: 2px solid #ffffff;
+  width: 130px;
+  transform: rotate(45deg);
+  transform-origin: left;
+  right: -130px;
+  top: -1px;
+}
+.cuadrado1 {
+  padding: 10px;
+  position: absolute;
+  width: 200px;
+  border: 1px solid #c23b3b;
+  border-top: 2px solid rgb(62, 33, 151);
+  background-color: #878787;
+  top: -300px;
+  right: 180px;
+}
+/*unity*/
+.linea2 {
+  position: absolute;
+  border-bottom: 2px solid #ffffff;
+  width: 100px;
+  transform: rotate(-45deg);
+  transform-origin: left;
+  right: -100px;
+  top: -2px;
+}
+#spot2{
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: #000000;
+  top: -4px;
+  left: 100px;
+  border-radius: 100%;
+}
+.cuadrado2 {
+  padding: 10px 0px;
+  position: absolute;
+  width: 220px;
+
+  border-top: 2px solid rgb(255, 255, 255);
+
+  right: 150px;
+}
+#arg2{
+  position: absolute;
+  white-space: pre;
+  top: -40px;
+  left: 20px;
+}
+#cont2{
+  position: absolute;
+  padding: 10px;
+  color: #ffffff;
+  width: 230px;
+  background-color: #0000004a;
+  text-align: right;
+  border-radius: 10px;
+  left: -15px;
+}
+
+
+/*Ccharp*/
+
+.linea3 {
+  position: absolute;
+  border-bottom: 2px solid #ffffff;
+  width: 100px;
+  transform: rotate(45deg);
+  transform-origin: right;
+  right: 100%;
+  top: -2px;
+
+}
+#spot3{
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: #5743ea;
+  top: -4px;
+  left: -4px;
+  border-radius: 100%;
+}
+.cuadrado3 {
+  padding: 10px 0px;
+  position: absolute;
+  width: 220px;
+  border-top: 2px solid rgb(255, 255, 255);
+  text-align: right;
+  right: -400px;
+
+}
+#arg3 {
+  position: absolute;
+  white-space: pre;
+  top: -40px;
+  left: 210px;
+}
+#cont3 {
+  position: absolute;
+  padding: 10px;
+  color: #ffffff;
+  width: 280px;
+  background-color: #0000004a;
+  text-align: right;
+  border-radius: 10px;
+  left: -55px;
+}
+
+
+/*-------------------------*/
+#divValita {
+  position: sticky;
+  background-color: rgb(255, 0, 0);
+  padding: 30px 0px;
+}
+.illustration {
+  display: block;
+  width: 60%;
+  height: 180px;
+  margin: auto;
+  background-color: rgb(255, 0, 0);
+}
+#Group1 {
+  transform: translate(26%);
+  transition: transform 0.5s ease-in-out;
+}
+#Group2 {
+  transform: translate(-26%);
+  transition: transform 0.5s ease-in-out;
+}
+#Group3 path {
+  d: path("M79.5 19.4201L70.9956 6.76611L60.7173 19.4201H68H79.5Z");
+  transform: translate(26%);
+  transition: transform 0.5s ease-in-out;
+}
+#Group4 path {
+  d: path("M63.5 89.5L50.201 104.153L57.6605 116.693L70.5 101.5L63.5 89.5Z");
+  transform: translate(26%);
+  transition: transform 0.5s ease-in-out;
+}
+#Valita {
+  visibility: hidden;
+  transition: transform 0.5s ease-in-out;
+  opacity: 0;
+}
+.illustration:hover #Group1 {
+  transform: translate(0%);
+}
+.illustration:hover #Group2 {
+  transform: translate(0%);
+}
+.illustration:hover #Group3 path {
+  transform: translate(0%);
+  d: path(
+    "M89.0723 38.3963L70.9956 6.76611L60.7173 19.4201L71.5203 38.3963H89.0723Z"
+  );
+  animation: aparece 1s forwards;
+}
+.illustration:hover #Group4 path {
+  transform: translate(0%);
+  d: path(
+    "M64.4486 87.0669L50.201 104.153L57.6605 116.693L82.1962 87.0669H64.4486Z"
+  );
+  animation: aparece 1s forwards;
+}
+.illustration:not(:hover) #Group3 path {
+  animation: desaparece 1s forwards;
+}
+.illustration:not(:hover) #Group4 path {
+  animation: desaparece 1s forwards;
+}
+.illustration:hover #Valita {
+  visibility: visible;
+  animation: valita 1.3s forwards;
+  opacity: 1;
+}
+
+@keyframes valita {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparece {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes desaparece {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

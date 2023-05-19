@@ -1,0 +1,68 @@
+<div class="cont-1">
+
+  <div class="count-2">
+    <img src="assets/PuntoPymes3d.png" alt="imgPuntoPymes" class="img">
+  </div>
+  <div class="count-3 ">
+    <h2 class="titel1">Contáctanos</h2>
+    <p class="p1">
+      Construimos tus ideas con la tecnología que mejor encaje a tus necesidades
+    </p>
+
+    <form #formNg="ngForm" (ngSubmit)="onSubmit(formNg)">
+      <div class="cont-4">
+
+        <div class="input-box">
+          <label class="details">Nombre</label><br>
+          <input pattern="^[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+$" placeholder="Nombres" type="text" name="names"
+            [(ngModel)]="form.names" required>
+        </div>
+
+        <div class="input-box">
+          <label class="details">Apellidos</label><br>
+          <input pattern="^[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+$" placeholder="Apellidos" type="text" name="surnames"
+            [(ngModel)]="form.surnames" required>
+        </div>
+
+        <div class="input-box">
+          <label class="details">Correo electrónico</label><br>
+          <input pattern="[a-zA-Z0-9._%+-ñÑáéíóúÁÉÍÓÚçÇ]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
+            placeholder="correodeejemplo@gmail.com" type="mail" name="mail" [(ngModel)]="form.mail" required="">
+        </div>
+
+        <div class="input-box">
+          <label class="details">Número de Teléfono</label><br>
+          <input pattern="^[0-9]+$" type="text" placeholder="Telefono de contacto" type="tel" name="phone"
+            [(ngModel)]="form.phone" required>
+        </div>
+
+        <div class="input-box">
+          <label class="details">Asunto</label><br>
+          <input pattern="^[a-zA-Z0-9+-ñÑáéíóúÁÉÍÓÚ\s.,()']+$" placeholder="Nombres" type="text" name="affair"
+            [(ngModel)]="form.affair" required>
+        </div>
+
+        <div class="input-box">
+          <label class="details">Área</label><br>
+          <input pattern="^[a-zA-Z0-9+-ñÑáéíóúÁÉÍÓÚ\s\-.,()']+$" placeholder="seleccione una área" type="text"
+            name="area" [(ngModel)]="form.area" required>
+        </div>
+
+        <div class="textarea">
+          <label class="details">Descripción</label><br>
+          <textarea pattern="^[a-zA-Z0-9+-ñÑáéíóúÁÉÍÓÚ\s\-.,()']+$" placeholder="Escriba una descripción de tu idea"
+            name="description" [(ngModel)]="form.description" required></textarea>
+        </div>
+
+        <div class="button">
+          <button class="noValido" type="submit" [ngClass]="{'btn':formNg.valid}"
+            [disabled]="!formNg.valid">Enviar</button>
+        </div>
+      </div>
+
+    </form>
+
+
+  </div>
+  <img class="img2" src="assets/TexturaNodos.png" alt="">
+</div>

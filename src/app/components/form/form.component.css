@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*especificar cómo calcular las dimensiones incluyendo el contenido, el padding y el borde.*/
+  /*font-family: 'Courier New', Courier, monospace;*/
+}
+/* esteeee*/
+form {
+  background-color: #878787;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 85%;
+  margin: 20px 0px 60px 0px;
+}
+
+.cont-1 {
+  display: flex;
+  position: relative;
+  background-color: #ffffff;
+  padding-top: 100px;
+  width: 100%;
+}
+
+.count-2 {
+  width: 45%;
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  justify-content: center;
+  align-items: center;
+  left: 0;
+
+  z-index: 1;
+}
+
+.count-3 {
+  width: 55%;
+  height: 100%;
+  right: 0;
+
+  z-index: 1;
+}
+.cont-4 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 10px;
+}
+
+.input-box {
+  width: calc(100% / 2); /*si esta al 100% se coloca 2 filas max*/
+  padding: 10px 20px;
+}
+
+*::placeholder {
+  font-size: 15px;
+}
+
+.input-box input {
+  padding: 10px 5px;
+  margin: 5px 0px 0px 0px;
+  height: 35px; /**/
+  width: 100%;
+  border-radius: 7px;
+  border-color: transparent;
+}
+
+.details {
+  color: aliceblue;
+}
+
+.textarea {
+  width: 100%;
+  padding: 6px 20px;
+}
+.cont-4 textarea {
+  margin: 5px 0px 0px 0px;
+  width: 100%;
+  height: 60px;
+  padding: 10px 10px;
+  border-radius: 7px;
+  border-color: transparent;
+  resize: none; /*quita el modific el tamaño*/
+}
+
+@media (max-width: 768px) {
+  /* Establece un ancho máximo de 768 píxeles */
+  form {
+    display: flex;
+    width: 90%;
+    margin: 20px 0px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .input-box {
+    width: 100%;
+  }
+  .cont-1 {
+    display: grid; /**/
+    padding-bottom: 60px;
+  }
+  .count-2 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; /**/
+  }
+  .count-3 {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .p1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img2{
+    height: 25% !important;
+  }
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+}
+
+.noValido {
+  width: 200px;
+  background-image: linear-gradient(to bottom, #d51f36, #9e0724);
+  opacity: 0.5;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.btn {
+  width: 200px;
+  opacity: 1;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.btn:active {
+  opacity: 0.8;
+}
+
+.titel1 {
+  background-clip: text;
+  font-size: 2.9rem;
+  background: linear-gradient(to bottom, #d51f36, #9e0724);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.p1 {
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #878787;
+  width: 70%;
+}
+
+.img {
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /**/
+  margin-top: auto;
+  margin-bottom: auto; /**/
+  padding-bottom: 7%;
+}
+
+.img2{
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    bottom: -120px;
+    z-index: 0;
+}
