@@ -1,5 +1,69 @@
-div{
-  background-color: aqua;
+#footer {
+  position: relative;
+  display: flex;
   width: 100%;
-  position: sticky;
+  height: 120px;
+  background-color: #515151;
+}
+
+#imgPymes {
+  width: 23%;
+  max-width: 500px;
+  margin: auto 10px auto 3%;
+}
+#arg1 {
+  width: 410px;
+
+  color: white;
+  margin: auto 0px auto 1%;
+}
+
+#div1 {
+  position: absolute;
+  top: 17px;
+  right: 120px;
+
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+#div1 p {
+  color: white;
+  margin: auto 0px;
+  transform: scale(0.8);
+}
+
+#div2 {
+  position: absolute;
+  right: 30px;
+  top: 6px;
+
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+#div2 p {
+  color: white;
+  margin: auto 0px;
+  transform: scale(0.8);
+}
+
+@media (max-width: 900px) {
+  #div1 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #div2 {
+    display: none;
+  }
+}
+
+.icon svg {
+  position: absolute;
+  left: -13px;
+  width: 13px;
 }

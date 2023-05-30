@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -12,6 +13,8 @@ import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotr
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { FormComponent } from './components/form/form.component';
 import { FormsModule } from '@angular/forms';
+import { SimulomseComponent } from './components/simulomse/simulomse.component';
+import { SwiperModule } from 'swiper/angular'
 
 @NgModule({
   declarations: [
@@ -23,13 +26,15 @@ import { FormsModule } from '@angular/forms';
     PlataformasComponent,
     SobreNosotrosComponent,
     ContactoComponent,
-    FormComponent
+    FormComponent,
+    SimulomseComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

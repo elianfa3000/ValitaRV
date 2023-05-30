@@ -1,31 +1,263 @@
+#h2 {
+  font-size: 3.8rem;
+  padding: 130px 0px 20px 6%;
+  font-weight: 900;
+  background-image: linear-gradient(to bottom, #fdd7d7, #d30101);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0.5px #fff;
 
-.container {
+  text-shadow: 2px 3px 5px rgba(129, 20, 20, 0.258);
+}
+.address {
+  color: #575252;
+  font-size: 2rem;
+  padding: 20px 0px 40px 6%;
+  font-weight: 100;
+  text-shadow: 2px 3px 5px rgba(129, 20, 20, 0.258);
+}
 
-  position: relative;
+#contacto {
+  display: flex;
+
   width: 100%;
-  height: 800px;
+
+  padding: 10px 15% 0px 15%;
+  flex-wrap: wrap;
+  gap: 20px 30px;
 }
-.div1, .div2 {
-  position: absolute;/*no*/
-  width: 50%;
-  height: 100%;
+
+.cont {
+  position: relative;
+  width: 30%;
+  min-width: 250px;
+  height: 300px;
+  margin: 0px auto 50px auto;
+}
+
+.contC {
+  position: relative; /**/
+  margin: 0px auto;
+  width: 230px; /*250*/
+  height: 300px;
+  transition: 0.4s;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.cartSvg {
+  display: block;
+
+  margin: 0 auto;
+}
+
+.cont:hover {
+  .contC {
+    transform: scale(1.08);
+  }
+  .red {
+    opacity: 0;
+  }
+}
+
+.shade {
+  position: absolute;
   top: 0;
-}
-.div1 {
-  left: 0;
- /* background-color: rgba(134, 134, 212, 0.427);*/
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#00000020, #000000d6);
   z-index: 2;
 }
-.div2 {
-  right: 0;
-  /*background-color: rgba(240, 135, 135, 0);*/
-  z-index: 1;
+
+.contC img {
+  width: 100%;
+  height: 100%;
+  z-index: 1; /*-----------*/
 }
-.div3 {
+.arg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s ease-in-out;
+  z-index: 4;
+}
+.arg svg {
+  margin-top: 30px;
+}
+
+.arg h2 {
+  color: white;
+  width: 70%;
+  font-size: 25px;
+  text-align: center;
+  margin: 10px auto 0px auto;
+}
+.arg p {
+  width: 195px;
+  margin: 5px auto 10px auto;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+}
+
+.arg h5 {
+  width: 190px;
+  margin: 10px auto 10px auto;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+}
+
+.red {
   position: absolute;
   width: 100%;
-  height: 500px;
-  bottom: 0;
-  background-color: red;
-  z-index: 0;
+  height: 100%;
+  top: 0;
+  background: linear-gradient(#ff3f59, #9e0724);
+  transition: 0.4s ease;
+  z-index: 2;
+}
+/*---------------------------*/
+
+#nosotros {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 0 10%;
+  gap: 10px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+.contact {
+  position: relative; /*position: absolute;*/
+  width: 15%;
+  min-width: 170px;
+  height: 230px;
+  margin: 20px auto;
+  border-radius: 40px;
+  box-shadow: 0px 3px 5px 3px #00000036;
+  background: white;
+  transition: 0.4s ease-in-out;
+  overflow: hidden;
+  z-index: 1;
+}
+.contact:hover {
+  transform: scale(1.1);
+}
+
+.contact:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#d51f36, #9e0724);
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+  z-index: -1;
+}
+.contact:hover::after {
+  opacity: 1;
+}
+
+.circle {
+  background-color: #9e0724;
+  width: 130px;
+  height: 130px;
+  display: flex; /**/
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0 auto;
+  border-radius: 100%;
+}
+.contact:hover .circle {
+  background-color: #ffffff;
+  transition: 0.4s ease-in-out;
+}
+.contact:not(:hover) .circle {
+  transition: 0.4s ease-in-out;
+}
+.contact svg {
+  fill: #ffffff;
+  transition: 0.4s ease-in-out;
+}
+.contact:hover svg {
+  fill: #d51f36;
+}
+
+.contact h2 {
+  margin-top: 9px;
+  color: #373737;
+  font-size: 25px;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+
+.contact:hover h2 {
+  color: #ffffff;
+}
+.contact p {
+  color: #373737;
+  font-size: 12px;
+  margin-top: 9px;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+
+.contact:hover p {
+  color: #ffffff;
+}
+
+#textura {
+  transform: translateY(-6%) translateX(-10%);
+  position: absolute;
+  bottom: -300px;
+  width: 130%;
+  height: 650px;
+  z-index: -1;
+}
+/*
+
+#nnn{
+  border:  solid 1px#000000;
+  background:  #ffffff;
+  transition: background-color 1s ease-in-out;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  z-index: 1;
+}
+#nnn:after{
+  background: linear-gradient( to top, #a567ec, #3801ff);
+  transition: opacity 0.5s ease-out;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+}
+#nnn:hover:after{
+
+  opacity: 1;
+}
+
+
+
+*/
+
+@media (max-width: 768px) {
+  #contacto {
+    padding: 60px 0% 30px 0%;
+  }
+  #h2 {
+    font-size: 2.7rem;
+  }
 }

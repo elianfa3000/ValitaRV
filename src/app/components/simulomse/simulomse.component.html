@@ -1,0 +1,56 @@
+<div id="simulomse">
+  <img id="img1" src="assets/simulomse/Rectangle.png" alt="">
+
+  <div id="arg">
+    <div id="arg2">
+      <h2>
+        SIMULOMSE
+      </h2>
+      <h3>
+        ¡Demuestra tus habilidades como docente! <br>
+        Interactúa con un grupo de estudiantes ficticios utilizando diferentes recursos y
+        estrategias pedagógicas
+      </h3>
+    </div>
+
+    <img id="img2" src="assets/simulomse/imgSimulomse.png" alt="">
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="background">
+  <swiper id="swiper" [slidesPerView]="slidesPerView" [spaceBetween]="30" #swiper [pagination]="{ clickable: true }"
+    [scrollbar]="{ draggable: true }" [loop]="true">
+    <ng-template swiperSlide><img class="SwiperC" src="assets/img/1.png" alt=""></ng-template>
+    <ng-template swiperSlide><img class="SwiperC" src="assets/img/2.png" alt=""></ng-template>
+    <ng-template swiperSlide><img class="SwiperC" src="assets/img/3.png" alt=""></ng-template>
+    <ng-template swiperSlide><img class="SwiperC" src="assets/img/4.png" alt=""></ng-template>
+    <ng-template swiperSlide><img class="SwiperC" src="assets/img/5.png" alt=""></ng-template>
+    <ng-template swiperSlide><img class="SwiperC" src="assets/img/6.png" alt=""></ng-template>
+
+  </swiper>
+  <div id="dutons">
+    <button class="swiper-button-pre" (click)="slidePrev()">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+      </svg>
+    </button>
+    <button class="swiper-button-nex" id="i" (click)="slideNext()">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+      </svg>
+    </button>
+    <!-- [navigation]="true" estos son los botones predeterminador del carrusel-->
+  </div>
+</div>

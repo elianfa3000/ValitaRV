@@ -5,10 +5,11 @@ import { SeccionMediaComponent } from "./components/seccion-media/seccion-media.
 import { PlataformasComponent } from "./components/plataformas/plataformas.component";
 import { SobreNosotrosComponent } from "./components/sobre-nosotros/sobre-nosotros.component";
 import { ContactoComponent } from "./components/contacto/contacto.component";
-
+import { SimulomseComponent } from "./components/simulomse/simulomse.component";
 
 const routes: Routes = [
-  {path:'inicio', component: InicioComponent},
+  {path:'', component: InicioComponent},
+  {path:'simulomse', component: SimulomseComponent},
   {path:'secMedia', component: SeccionMediaComponent},
   {path:'plataforma',component:PlataformasComponent},
   {path:'sobreNosotros',component:SobreNosotrosComponent},
