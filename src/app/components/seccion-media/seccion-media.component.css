@@ -1,6 +1,8 @@
+/*----------------------------------nuestrosServicios*/
 #nuestrosServicios {
   background-color: rgb(255, 255, 255);
   position: sticky;
+  padding-bottom: 50px;
 }
 .div1 {
   width: 88%;
@@ -26,37 +28,71 @@
   width: 95%;
   margin-right: auto;
   margin-left: auto;
-
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   padding-top: 60px;
 }
-.figures2 {
-  display: flex;
-  width: 95%;
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: space-evenly;
-  padding-top: 60px;
-  padding-bottom: 80px;
-}
-.figure {
+
+/*f1*/
+.figure1 {
   display: block;
   margin-right: auto;
   margin-left: auto;
   transition: transform 0.4s ease-in-out;
 }
-.figure:hover {
+.figure1:hover {
   transform: scale(1.2);
-  fill: #ff0000; /*   :(  */
-  color: #c23b3b; /*   :(  */
 }
+.figure1:hover path {
+  transition: 1s;
+  stroke: #9e0724;
+}
+.figure1:not(:hover) path {
+  transition: 1s;
+}
+/*f2*/
+.figure2 {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  transition: transform 0.4s ease-in-out;
+}
+.figure2:hover {
+  transform: scale(1.2);
+}
+.figure2:hover path {
+  transition: 1s;
+  fill: #9e0724;
+}
+.figure2:not(:hover) path {
+  transition: 1s;
+}
+/*f3*/
+.figure3 {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  transition: transform 0.4s ease-in-out;
+}
+.figure3:hover {
+  transform: scale(1.2);
+}
+.figure3:hover path {
+  transition: 1s;
+  stroke: #9e0724;
+}
+.figure3:not(:hover) path {
+  transition: 1s;
+}
+/**/
 .figure-argument {
   width: 400px;
 }
 .figure-argument2 {
   width: 400px;
   text-align: center;
+  margin: 50px 0;
 }
 
 .EJM1 {
@@ -67,12 +103,7 @@
   display: flex; /**/
   justify-content: center;
 }
-.elemento {
-  /**/
-  align-self: center; /* centra verticalmente el elemento dentro del contenedor */
-  /**/
-  position: sticky;
-}
+
 .b-caption {
   font-size: 1.8rem;
   font-weight: bold; /*negrita*/
@@ -85,17 +116,28 @@
   padding-top: 20px;
 }
 
-/*------------------------------------*/
+/*----------------------------------------tecDesarrollo*/
 
 #tecDesarrollo {
   position: sticky;
-  height: 900px;
+  height: auto;
   width: 100%;
-  background: linear-gradient(#000000, #f12b2b);
+  padding-bottom: 100px;
+  overflow: hidden;
+  background: linear-gradient(#000000, #7b2323);
 }
-.imgTecDesa {
-  justify-content: space-evenly;
+
+.figures3-arg {
+  position: relative;
+
+  width: 200px;
+  height: 180px;
+  transition: transform 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 #div2 {
   width: 93%;
   padding-top: 110px;
@@ -106,21 +148,18 @@
 
 .figures3 {
   display: flex;
-  width: 60%;
+  width: 50%;
+
   margin: 0px auto;
   justify-content: space-evenly;
-  align-items: center;
-  padding-top: 80px;
+  position: relative;
+  padding-top: 150px;
+
+  flex-wrap: wrap;
 }
-.figures4 {
-  display: flex;
-  width: 60%;
-  margin: 0px auto;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 60px;
-}
+
 /*blender*/
+
 .linea1 {
   position: absolute;
   border-bottom: 2px solid #ffffff;
@@ -128,17 +167,54 @@
   transform: rotate(45deg);
   transform-origin: left;
   right: -130px;
-  top: -1px;
+  top: -2px;
+}
+#spot1 {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: #f48a48;
+  top: -4px;
+  left: 125px;
+  border-radius: 100%;
 }
 .cuadrado1 {
   padding: 10px;
   position: absolute;
-  width: 200px;
-  border: 1px solid #c23b3b;
-  border-top: 2px solid rgb(62, 33, 151);
-  background-color: #878787;
-  top: -300px;
-  right: 180px;
+  width: 230px;
+  border-top: 2px solid rgb(255, 255, 255);
+  top: -170px;
+  right: 240px;
+}
+#arg1 {
+  font-size: 1.6rem;
+  position: absolute;
+  white-space: pre;
+  top: -45px;
+  left: 15px;
+}
+#cont1 {
+  position: absolute;
+  padding: 10px;
+  color: #ffffff;
+  width: 230px;
+  background-color: #0000004a;
+  text-align: right;
+  border-radius: 10px;
+  left: -10px;
+}
+#blender {
+  transition: transform 0.4s ease-in-out;
+}
+#blender:hover {
+  transform: scale(1.2);
+}
+#blender:hover path {
+  fill: #f48a48;
+  transition: fill 1s ease;
+}
+#blender:not(:hover) path {
+  transition: fill 1s ease;
 }
 /*unity*/
 .linea2 {
@@ -150,7 +226,7 @@
   right: -100px;
   top: -2px;
 }
-#spot2{
+#spot2 {
   position: absolute;
   height: 10px;
   width: 10px;
@@ -162,19 +238,19 @@
 .cuadrado2 {
   padding: 10px 0px;
   position: absolute;
-  width: 220px;
-
   border-top: 2px solid rgb(255, 255, 255);
-
-  right: 150px;
+  width: 220px;
+  top: 150px;
+  right: 210px;
 }
-#arg2{
+#arg2 {
+  font-size: 1.6rem;
   position: absolute;
   white-space: pre;
-  top: -40px;
+  top: -45px;
   left: 20px;
 }
-#cont2{
+#cont2 {
   position: absolute;
   padding: 10px;
   color: #ffffff;
@@ -184,9 +260,46 @@
   border-radius: 10px;
   left: -15px;
 }
-
+#unity {
+  transition: transform 0.4s ease-in-out;
+}
+#unity:hover {
+  transform: scale(1.2);
+}
+/*1*/
+#unity:hover #unity-id1 {
+  fill: #3e3e3e;
+  transition: fill 0.8s ease;
+}
+#unity:not(:hover) #unity-id1 {
+  transition: fill 0.8s ease;
+}
+/*2*/
+#unity:hover #unity-id2 {
+  fill: rgb(28, 28, 28);
+  transition: fill 0.8s ease;
+}
+#unity:not(:hover) #unity-id2 {
+  transition: fill 0.8s ease;
+}
+/*3*/
+#unity:hover #unity-id3 {
+  fill: rgb(99, 99, 99);
+  transition: fill 0.8s ease;
+}
+#unity:not(:hover) #unity-id3 {
+  transition: fill 0.8s ease;
+}
 
 /*Ccharp*/
+.scope {
+  position: relative; /* Establecer posición absoluta para los elementos */
+  right: 100px;
+  width: 10px;
+  height: 330px;
+  /*background-color: #435fea;*/
+  z-index: -2;
+}
 
 .linea3 {
   position: absolute;
@@ -196,13 +309,12 @@
   transform-origin: right;
   right: 100%;
   top: -2px;
-
 }
-#spot3{
+#spot3 {
   position: absolute;
   height: 10px;
   width: 10px;
-  background-color: #5743ea;
+  background-color: #435fea;
   top: -4px;
   left: -4px;
   border-radius: 100%;
@@ -213,17 +325,19 @@
   width: 220px;
   border-top: 2px solid rgb(255, 255, 255);
   text-align: right;
-  right: -400px;
-
+  top: 150px;
+  right: -210px;
 }
 #arg3 {
+  font-size: 1.6rem;
   position: absolute;
   white-space: pre;
-  top: -40px;
-  left: 210px;
+  top: -45px;
+  left: 180px;
 }
 #cont3 {
-  position: absolute;
+  position: relative; /*------------------*/
+
   padding: 10px;
   color: #ffffff;
   width: 280px;
@@ -233,11 +347,115 @@
   left: -55px;
 }
 
+#c-sharp {
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+#c-sharp:hover {
+  transform: scale(1.2);
+}
+#c-sharp:hover path {
+  fill: #435fea;
+  transition: fill 0.5s ease-in-out;
+}
+#c-sharp:not(:hover) path {
+  transition: fill 0.5s ease-in-out;
+}
+#union {
+  width: 100%;
+  min-width: 1500px;
 
-/*-------------------------*/
+  position: absolute;
+
+  bottom: 0;
+  filter: blur(4px);
+  z-index: -1;
+}
+
+/*------------------------------------------------sectores*/
+
+#sectores {
+  position: sticky;
+  background: linear-gradient(#7b2323, #cc3b3b);
+  width: 100%;
+  padding-top: 60px;
+}
+
+#titel_sectores {
+  display: block;
+  font-size: 2.7rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#p_sectores {
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+}
+
+#box_figures {
+  width: 90%;
+
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.sec_div {
+  width: 30%;
+  min-width: 300px;
+  margin: 0px auto 20px auto;
+  position: relative; /*:)*/
+}
+
+#box_figures .sec_div img {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  left: 50%; /* Centrado en el 50% horizontal del contenedor padre :)*/
+  transform: translateX(-50%); /* Ajuste para el centrado exacto :)*/
+
+  z-index: 0;
+}
+
+#box_figures .sec_div div {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  max-width: 360px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.323);
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#box_figures .sec_div div h3 {
+  background-clip: text;
+  font-size: 1.7rem;
+  background: linear-gradient(to bottom, #d51f36, #9e0724);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#box_figures .sec_div div p {
+  background-clip: text;
+  color: #878787;
+  text-align: center;
+  line-height: 22px;
+}
+
+/*-----------------------------------------------divValita*/
+
 #divValita {
   position: sticky;
-  background-color: rgb(255, 0, 0);
+  background-color: #cc3b3b;
   padding: 30px 0px;
 }
 .illustration {
@@ -245,7 +463,7 @@
   width: 60%;
   height: 180px;
   margin: auto;
-  background-color: rgb(255, 0, 0);
+  background-color: #cc3b3b;
 }
 #Group1 {
   transform: translate(26%);
@@ -266,10 +484,10 @@
   transition: transform 0.5s ease-in-out;
 }
 #Valita {
-  visibility: hidden;
   transition: transform 0.5s ease-in-out;
   opacity: 0;
 }
+
 .illustration:hover #Group1 {
   transform: translate(0%);
 }
@@ -332,5 +550,252 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+/*-----------------------------------@@*/
+
+#logo {
+  display: flex;
+  position: sticky;
+  background-color: #cc3b3b;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#logo h3 {
+  width: 30%;
+  min-width: 340px;
+  margin: auto;
+  font-size: 25px;
+  text-align: right;
+  height: 55px;
+  color: #ffffff;
+}
+#logo-1 {
+  display: flex;
+  width: 70%;
+
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+#PPy {
+  width: 25%;
+  min-width: 280px;
+  height: 200px;
+  margin: 0px auto;
+}
+
+#VR {
+  width: 17%;
+  height: 100px;
+  margin: 50px auto;
+  min-width: 300px;
+}
+#o {
+  width: 10%;
+  height: auto;
+  margin: auto 0px;
+  padding: 25px;
+  min-width: 200px;
+}
+#V1 {
+  width: 70px;
+  height: 130px;
+  margin: 35px 0px 35px auto;
+}
+
+#V2 {
+  width: 70px;
+  height: 130px;
+  margin: 35px auto 35px 0px;
+  transform: rotate(180deg);
+}
+
+/*----------------------------------------------casos de exito*/
+
+#C-background {
+  position: absolute;
+  width: 100%;
+  height: 430px;
+  top: 0;
+  background-color: #cc3b3b;
+  z-index: -1;
+}
+#C-exito {
+  position: sticky;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
+
+  display: block; /**/
+  /* justify-content: center;*/
+}
+
+#cont-casos {
+  position: relative;
+  width: 100%;
+  padding: 0 10%; /**/
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  z-index: 3;
+}
+#C-h2 {
+  /**/
+  width: 100%;
+  height: 70px;
+  font-size: 3em;
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 0 100px 0;
+  z-index: 1;
+}
+.simulomse {
+  position: relative;
+  overflow: hidden;
+  width: 350px;
+  height: 450px;
+  min-width: 350px;
+  box-shadow: 2px 2px 10px #3e3e3e8c;
+  margin: 20px auto;
+  border-radius: 20px;
+  transform: translateZ(0); /* Fuerza aceleración por hardware */
+  will-change: transform; /* Optimiza la animación */
+}
+.simulomse img {
+  width: 104%;
+  transform: translateX(-2%) translateY(-2%);
+}
+
+.sim-arg {
+  position: relative;
+  background-color: #ffffffb1;
+  width: 100%;
+  height: 140px;
+  transform: translateY(-150px);
+  transition: all 0.4s ease-in-out;
+  z-index: 2;
+  backface-visibility: hidden; /*- mejora el render */
+  -webkit-backface-visibility: hidden; /* Para Safari */
+}
+
+.sim-arg h3 {
+  scale: 1.6;
+  font-weight: 800;
+  color: #cc3b3b;
+  text-align: center;
+  margin: 20px auto;
+  transition: all 0.4s ease-in-out;
+  transform: translateY(20px);
+}
+
+.sim-arg a div {
+  background-color: #9e0724;
+  width: 50%;
+  height: 46px;
+  margin: 0 auto;
+  padding-top: 13px;
+  border-radius: 30px;
+  transition: all 0.4s ease-in-out;
+  transform: translateY(50px);
+}
+
+.sim-arg a div p {
+  color: #ffffff;
+  text-align: center;
+  scale: 1.2;
+}
+.sim-arg a {
+  text-decoration: none;
+}
+.simulomse:hover {
+  .sim-arg a div {
+    transform: translateY(-50px);
+  }
+  .sim-arg {
+    background-color: transparent;
+    transform: translateY(-120px);
+  }
+  .sim-arg h3 {
+    color: #ffffff;
+    transform: translateY(-30px);
+  }
+  .background {
+    opacity: 1;
+  }
+}
+.simulomse:not(:hover) {
+  .sim-arg {
+    animation: colorN 0.4s forwards;
+  } /*1s*/
+}
+.background {
+  background: linear-gradient(#00000000, #000000df);
+  width: 100%;
+  height: 300px;
+  transform: translateY(-490px);
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  pointer-events: none; /* Evita problemas de hover */
+}
+
+@keyframes colorN {
+  0% {
+    background-color: #ffffff00;
+  }
+  100% {
+    background-color: #ffffffb1;
+  }
+}
+
+/*--------------------------------------------------*/
+
+@media (max-width: 768px) {
+  .cuadrado1 {
+    right: 80px;
+  }
+  .cuadrado2 {
+    right: 80px;
+  }
+  .cuadrado3 {
+    right: -140px;
+  }
+  .figure-argument {
+    transform: scale(0.7);
+    margin: -50px auto;
+  } /**/
+
+  .linea1 {
+    display: none;
+  }
+  .spot1 {
+    width: 100px;
+  }
+  .cuadrado1 {
+    top: 130px;
+    right: -40px;
+    width: 213px;
+  }
+
+  #cont-casos {
+    margin: -200px auto;
+    transform: scale(0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .simulomse {
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    height: 450px;
+    min-width: 350px;
+    box-shadow: 2px 2px 10px #3e3e3e8c;
+    margin: 20px auto;
+    border-radius: 20px;
   }
 }

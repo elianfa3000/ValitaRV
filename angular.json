@@ -16,6 +16,7 @@
             "outputPath": "dist/valita-rv",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "baseHref":"/",
             "polyfills": [
               "zone.js"
             ],
@@ -34,13 +35,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "8kb",
+                  "maximumError": "10kb"
                 }
               ],
               "outputHashing": "all"

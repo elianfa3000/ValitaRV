@@ -1,7 +1,135 @@
-div{
-  background-color: aqua;
-  height: 9000px;
-  /**/
-  position: sticky;
+#h2NP{
+  padding-top:2ch;
+  padding:80px 6% 0 6%;
+  font-size: 4rem;
+  font-weight: 800;
+  background-clip: text;
+  background: linear-gradient(to bottom, #fad7d7, #fd1b39);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 3px 3px 4px #0000001b;
+}
+
+#h3NP{
+  width: 50%;
+  padding-top:10px;
+  padding-left: 6%;
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: #757575;
+  padding-bottom: 20px;
+}
+
+#nuestrasPlataformas {
+  padding: 20px 3% 0 3%;
   width: 100%;
+  height: auto;
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.imgSimulation {
+  width: 40%;
+  min-width: 520px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 35px;
+}
+
+.imgSimulation img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.imgSimulation:hover img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+}
+.btSimulation {
+  display: flex;
+  position: absolute;
+  background-color: white;
+  border-radius: 30px;
+  width: 30%;
+  height: 8%;
+  min-height: 35px;
+  top: 15px;
+  right: 15px;
+  color: #d51f36;
+  font-size: 1.3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido {
+  width: 100%;
+  height: 31%;
+  position: absolute;
+  bottom: 5px;
+  padding: 0 6%;
+}
+.contenido h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 7px;
+}
+
+.contenido p {
+  color: #ffffff;
+  font-size: 1.2rem;
+
+  font-weight: 200;
+}
+
+@media (max-width: 768px){
+  #h2NP{
+
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  #h3NP{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+  }
+
+
+  #nuestrasPlataformas {
+    padding: 20px 0% 0px 0%;
+    width: 100%;
+
+    display: flex;
+
+
+
+  }
+
+  .imgSimulation {
+    width: 90%;
+    min-width: 300px;
+    max-width: 450px;
+    height: 250px;
+
+
+
+    padding: 0;
+  }
+  .contenido {
+    top: 50px;
+
+  }
+
+  .btSimulation {
+
+    font-size: 1.1rem;
+
+  }
 }

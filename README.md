@@ -1,27 +1,29 @@
-# ValitaRV
+# Proyecto Web PuntoPymes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
+Aplicación web informativa desarrollada para la empresa **Punto Pymes**, con el objetivo de presentar información institucional y facilitar el acceso a secciones de interés para clientes y usuarios.
 
-## Development server
+## 🛠️ Tecnologías utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Angular** (Frontend Framework)
+- **HTML5 / CSS / TypeScript**
+- **Despliegue en Render (Static Site Hosting)**
+- **Sin backend — 100% frontend informativo**
 
-## Code scaffolding
+## 🌐 Demo en producción
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+👉 https://valitarv.onrender.com/#/
 
-## Build
+> El proyecto está desplegado en **Render**, utilizando configuración de hosting estático para permitir navegación mediante rutas de Angular.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 📌 Características principales
 
-## Running unit tests
+- Navegación informativa por secciones (inicio, plataformas, contacto, etc.).
+- Menú dinámico con comportamiento visual según el scroll y la ruta activa.
+- Interfaz optimizada para una experiencia clara e intuitiva.
+- Diseño adaptable (responsive) para distintos tamaños de pantalla.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📍 Contexto del proyecto
 
-## Running end-to-end tests
+Este proyecto fue desarrollado durante una **pasantía profesional** en la empresa **Punto Pymes**, con el propósito de ofrecer una solución web informativa moderna, ligera y fácilmente mantenible.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
